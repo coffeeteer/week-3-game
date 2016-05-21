@@ -1,5 +1,5 @@
+document.addEventListener("DOMContentLoaded",function(){
 
-document.addEventListener("DOMContentLoaded", function(){
 var wins = document.getElementById("wins");
 var losses = document.getElementById("losses");
 var guessesLeft = document.querySelector("#guessLeft");
@@ -13,9 +13,9 @@ var guessLetter = document.getElementById("guess_letter");
 	document.onkeyup = function letterPick(event){
 		console.log(guessVal);
 		var guessLetter = String.fromCharCode(event.keyCode).toUpperCase();
-		// document.createElement(getElementById("guess_val"));
+		//document.createElement(getElementById("guess_val"));
 		guessVal.innerHTML = guessLetter;
-		guessLetter.str.substring(0,9);
+		//guessLetter.str.substring(0,9);
 		console.log(guessVal);
 
 	}
@@ -24,7 +24,20 @@ var guessLetter = document.getElementById("guess_letter");
 function cpuGuess (){
 	var random = "ABCDEFGHIJKLMNOPQURSTUVWXYZ".split('');
 	return str.substring(Math.floor(Math.random() * 26), 1);
-	
+}
+
+function guessStr(guessVal, guessLetter){
+	for(var i = 0; i < 9; i++){
+		if(i === guessVal && i === guessLetter){
+			guessVal.innerHTML.str.substr(0, 9);
+			guessLetter.innerHTML.str.substr(0, 9);
+			 if(wins ===){
+			 	//not guessed keep going - 8 more turns
+			 } else if {
+			 	//
+			 }
+		}
+	}
 }
 
 //input wins
@@ -50,11 +63,3 @@ if(guessLetter  ){
 }
 
 })
-
-
-	// document.getElementById('wins').innerHTML = win;
-	// document.getElementById('loss').innerHTML = lose;
-	// document.getElementById('ties').innerHTML= tie;
-
-
-//indexOF
